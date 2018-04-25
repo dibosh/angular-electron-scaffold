@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>My Angular Electron App</title>
+    <base href="./">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-regular.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/index.css">
+  </head>
+  <body ng-controller="BaseController as base">
+    <ng-include src="base.loginView" ng-if="!base.isLoggedIn"></ng-include>
+    <ng-include src="base.messengerView" ng-if="base.isLoggedIn"></ng-include>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script src="./src/index.module.js"></script>
+  </body>
+</html>

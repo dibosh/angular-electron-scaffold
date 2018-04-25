@@ -1,0 +1,23 @@
+<div class="container-fluid" ng-controller="MessengerController as ctrl">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="list-group">
+        <a href="#" class="list-group-item" ng-repeat="chat in ctrl.chats">
+          <h4 class="list-group-item-heading">{{chat.person.name}}</h4>
+          <p class="list-group-item-text">{{chat.textSnippet}}</p>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="container-fluid">
+        <textarea class="form-control" rows="10"></textarea>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Text">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

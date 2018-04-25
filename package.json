@@ -1,0 +1,21 @@
+{
+  "name": "angular-electron-scaffold",
+  "version": "1.0.0",
+  "description": "A simple enough electron app scaffold using AngularJS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/dibosh/angular-electron-scaffold",
+  "author": "Munim Dibosh",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "angular": "^1.6.10",
+    "bootstrap3": "^3.3.5",
+    "jquery": "^3.3.1"
+  }
+}
